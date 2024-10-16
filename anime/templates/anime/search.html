@@ -1,0 +1,10 @@
+{% extends 'anime/main.html' %}
+
+
+{% load static %}
+
+{% block content %}
+
+    {% include 'anime/list.html' with list_title=title %}
+
+{% endblock %}

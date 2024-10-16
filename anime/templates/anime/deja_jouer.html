@@ -1,0 +1,24 @@
+{%extends 'anime/main.html'%}
+{% load static %}
+{% block content %}
+
+	<body>
+		<div class="container" style="margin: 10% auto;">
+			<div style="margin:auto;"  class="alert alert-warning  card col-md-10" role="alert">
+				<h1 class="alert-heading">Attention !</h1>
+				<hr>
+				<h2 class="card-text ">
+					"  Vous aviez déjà participé à ce Défi. Revenez en fin du mois pour le retrouver à la page
+					<a href="{% url 'anime:defi_precedent' %}">
+						<button type="button" class="btn btn-outline-warning"> Défi précédent </button>
+
+					</a>
+					et N'oublier pas de consulter le classement du Défi "
+				</h2>
+			</div>
+		</div>
+
+	</body>
+
+
+{% endblock %}

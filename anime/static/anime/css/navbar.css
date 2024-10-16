@@ -1,0 +1,16 @@
+
+  .hello-msg{
+    font-size: 18px;
+    color: #fff;
+    margin-right: 20px;
+  }
+  #logo{
+
+        border-radius : 100%;
+  }
+
+.nav-profile-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}

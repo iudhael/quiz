@@ -1,0 +1,84 @@
+{%extends 'anime/main.html'%}
+{% block content %}
+
+
+
+
+<body>
+	<div class="container">
+        <div class="welcom alert alert-success"  role="alert">
+			<center>
+				<h2>Bienvenue dans le Défi de la semaine</h2>
+			</center>
+
+        </div>
+    </div>
+
+
+
+        <div class="titre_defi alert alert-success" role="alert">
+			<center>
+        		<h2>{{ titre.title }}</h2>
+			</center>
+        </div>
+
+
+	<form action="" method="POST">
+		{% csrf_token %}
+		<div class="wrapper">
+			<div class="carousel owl-carousel">
+				{% for question_obj in question_objs %}
+					<div class="card card-1">
+						<div class="conteneur0">
+							<h5 class="">{{ question_obj.question }}</h5>
+						</div>
+						<div class="marge">
+
+
+						{% for choice in question_obj.get_answers %}
+
+							<div class="conteneur1 form-check">
+								<input  value="{{ choice }}" type="radio" class="form-check-input" name="{{ question_obj.question }}" id="{{ choice }}" >
+								<label class="form-check-label" for="{{ choice }}">
+									{{ choice }}
+								</label>
+							</div>
+						{% endfor %}
+
+						</div>
+					</div>
+
+				{% endfor %}
+				<button type="submit" class="card card-5 btn btn-primary">Submit</button>
+				<!--<div class="card card-5" type="submit">Envoyé</div>-->
+			</div>
+		</div>
+	</form>
+
+	<script>
+		$(".carousel").owlCarousel({
+
+			margin: 10 ,
+			loop: true ,
+			autoplayTimeout:2000,
+			autoplayHoverPause: true ,
+			responsive:{
+				0: {
+					items:1 ,
+					nav: false
+				}
+			}
+
+		})
+
+	</script>
+
+</body>
+
+
+
+
+{% endblock %}
+
+
+

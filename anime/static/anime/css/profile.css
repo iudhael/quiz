@@ -1,0 +1,46 @@
+
+ /*page de profile */
+
+.content-section {
+  background: #fff;
+  padding: 10px 15px;
+  border: 2px solid #dddddd;
+  border-radius: 0px 90px 90px 0px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+
+}
+
+.account-img {
+  height: 190px;
+  width: 190px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+  padding-top: 50px ;
+
+}
+
+/*@media(max-width :600px){
+    .media{
+     display: flex;
+     flex-direction : column;
+    }
+}
+
+*/
+
+
+
+
+/* menu
+.nav-profile-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+*/

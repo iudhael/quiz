@@ -1,0 +1,78 @@
+{% extends 'anime/main.html' %}
+
+
+{% load static %}
+
+{% block content %}
+
+<body>
+    <div class="boxer text-center">
+
+            <h2>
+                <a href="{% url 'home' %}">Nos Défis</a>
+            </h2>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                {%  include 'anime/search_form.html' %}
+
+				<center>
+					<div class="conteneur1">
+							<p>intro</p><p>intro</p><p>intro</p><p>intro</p><p>intro</p><p>intro</p>
+
+					</div>
+					<div class="col-md-12 col-md-offset-3 text-center conteneur">
+
+						<center>
+
+							<div class="conteneur2">
+
+								<h2 class="text1">
+
+									<a href="{% url 'anime:defi_actuel' %}" class="text-color">
+										defis du mois
+									</a>
+								</h2>
+							</div>
+							<div class="conteneur3">
+
+								<div class="conteneur4">
+
+									<h2 class="text2">
+										<a href="{% url 'anime:defi_precedent' %}" class="text-color">
+											defis precedent
+										</a>
+									</h2>
+								</div>
+
+
+
+								<div class="conteneur5">
+
+									<h2 class="text2">
+										<a href="{% url 'anime:defi_avenir' %}" class="text-color">
+											defi a vevinr
+										</a>
+									</h2>
+
+								</div>
+							</div>
+						</center>
+					</div>
+				</center>
+			</div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+{% endblock %}
+
+	  

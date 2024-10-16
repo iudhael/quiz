@@ -1,0 +1,155 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/fond.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+
+
+
+
+    _align-items: center;
+    min-height: 100vh ;
+    }
+        .wrapper{
+            display: flex;
+            width: 100% ;
+        }
+        .wrapper .carousel{
+            max-width: 1200px ;
+            margin: auto;
+            padding: 0 30px;
+        }
+
+        .carousel .card{
+            border-radius: 10px ;
+            _line-height: 250px;
+            _text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 30px ;
+            height: 100% ;
+            width: 100% ;
+            margin: 20px 0 ;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+            padding: 40px 15px 50px 15px;
+            margin-top : 100px;
+
+        }
+
+
+        .owl-dots{
+            text-align: center;
+            margin-top: 45px ;
+            margin-bottom: 100px ;
+        }
+        .owl-dot{
+            height: 15px;
+            width:45px ;
+            border-radius: 25px ;
+            cursor: pointer;
+            outline: none;
+            margin: 0 5px ;
+            border:  2px solid #151431 !important;
+            transition: all 0.3s ease;
+        }
+        .owl-dot:hover , .owl-dot.active{
+            background:#151431 !important;
+        }
+        .carousel .card-1{
+
+
+            background:#151431 ;
+
+        }
+
+        .carousel .card-5 {
+            background: #630460 ;
+            text-decoration: none;
+
+
+            text-align: center;
+
+
+        }
+        .card-5 a{
+
+            text-decoration: none;
+            color: #fff;
+
+            text-align: center;
+
+
+        }
+
+
+        div .marge{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            _border: 1px blue solid;
+
+
+        }
+
+        .conteneur0{
+
+            margin-bottom: 80px;
+            text-align:center;
+            _border: 1px blue solid;
+            font-style: italic;
+
+        }
+
+
+        .conteneur1{
+
+            margin-bottom:30px;
+            _text-align:center;
+            _border: 1px blue solid;
+
+
+        }
+        .conteneur2{
+            margin-bottom:30px;
+            _text-align:center;
+            _border: 1px blue solid;
+
+        }
+        .conteneur3{
+
+            _margin:auto;
+            _text-align:center;
+            _border: 1px blue solid;
+
+
+        }
+
+.welcom{
+    width: 99%;
+    height: 100px;
+    margin: auto;
+
+
+}
+
+.titre_defi{
+    margin-top: 90px;
+    height: 100px;
+    padding: 30px 15px;
+
+    _border: 1px blue solid;
+}
+
+
+
+

@@ -1,0 +1,102 @@
+body{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/fond.jpg') center center fixed;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  color: #999;
+  text-decoration: none;
+}
+
+
+.boxer {
+	margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+
+
+.box {
+	margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+
+.conteneur{
+	display: flex;
+	justify-content: space-between;
+	_justify-content: space-around;
+	
+	
+	
+	height:400px;
+	
+	_border: 1px blue solid;
+	margin-top: 40px;
+	width: 100%;
+    	max-width: 500px; 
+	 
+}
+
+
+
+
+
+.conteneur1{
+	margin-top: 20px;
+	border: 1px blue solid;
+	
+	width: 100%;
+    max-width: 1100px;
+	
+	 
+	
+	
+}
+
+
+.text1{
+	_position: absolute;
+    
+    padding-top:125px;
+	
+	
+}
+
+
+
+.text-color{
+	color: #fff;
+	
+}
+
+
+

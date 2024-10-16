@@ -1,0 +1,105 @@
+{%extends 'anime/main.html'%}
+{% load static %}
+{% block content %}
+
+
+
+<head>
+
+
+
+
+	<script src="{% static 'anime/js/jquery-3.6.0.min.js' %}"></script>
+	<script src="{% static 'anime/js/owl.carousel.min.js' %}"></script>
+
+	<style>
+
+
+
+
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+	<!--	<center>
+			{% for def in defis %}
+				<a href="{% url 'anime:detail' defi_quiz_id=def.id %}">
+					<div class="general">
+
+							<div class="prec">
+								<img class="image" src="{{ def.image.url }}" alt="{{ def.title }}">
+
+							</div>
+							<div  class="titre">
+									<h3>{{ def.title }}</h3>
+							</div>
+
+					</div>
+				</a>
+			{% endfor %}
+		</center>
+		-->
+		<center>
+			<div class="wrapperr">
+				<div class="carousel owl-carousel">
+					{% for def in defi %}
+
+							<a href="{% url 'anime:detail' defi_quiz_id=def.id %}">
+								<div class="carde carde-3">
+
+									<div  class="image2_div">
+										<img class="image2" src="{{ def.image.url }}" alt="{{ def.title }}" >
+									</div>
+
+									<div  class="titre">
+										<h3>{{ def.title }}</h3>
+									</div>
+								</div>
+							</a>
+					{% endfor %}
+				</div>
+			</div>
+		</center>
+		</div>
+	</div>
+
+
+
+<script>
+			$(".carousel").owlCarousel({
+
+			  margin: 10 ,
+			  loop : false	,
+
+			 // autoplay: true ,
+			  //autoplayTimeout:2000,
+			  autoplayHoverPause: true ,
+			  responsive:{
+				0: {
+				  items:1 ,
+				  nav: false
+				},
+
+				100: {
+				  items:1 ,
+				  nav: false
+				},
+				500: {
+				  items:2 ,
+				  nav: false
+				},
+
+				1000: {
+				  items:3 ,
+				  nav: false
+				}
+			  }
+
+			})
+		  </script>
+	</body>
+
+
+{% endblock %}

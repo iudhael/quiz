@@ -1,0 +1,67 @@
+{%extends 'anime/main.html'%}
+{% load static %}
+{% block content %}
+    <head>
+        <meta charset="UTF-8">
+        <title>ggg</title>
+
+
+    </head>
+    <body>
+
+
+        <div class="boxer text-center">
+
+                <h2>
+                    <a href="/anime/">{{ defis_avenir.title }}</a>
+                </h2>
+
+        </div>
+
+
+
+
+
+         <div class="container">
+             <div>
+                 <div class="container">
+                     <div class="row">
+                        <div class="box">
+
+                        <center>
+
+                        <div class="col-md-6 col-md-offset-3 text-center conteneur">
+                            <img  height="100%" width="100%" src="{{ defis_avenir.image.url }}" alt="{{ defis_avenir.title }}">
+
+
+                        </div>
+
+
+                        <div class="conteneur1">
+                                <p>{{ defis_avenir.title }} description</p>
+
+
+
+
+                        </div>
+
+                        </center>
+
+
+
+                        </div>
+                     </div>
+                </div>
+             </div>
+         </div>
+
+
+
+            <!-- jQuery -->
+            <script src="{% static 'anime/js/jquery.js' %}"></script>
+            <!-- Bootstrap Core JavaScript -->
+            <script src="{% static 'anime/js/bootstrap.min.js' %}"></script>
+
+
+    </body>
+{% endblock %}
