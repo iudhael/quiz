@@ -1,0 +1,31 @@
+
+
+l'url 'anime/4' 4 etant l'id du dernier defi amene au dernier defi auquelle la personne
+	peut participer a corriger 
+
+ajouter d'autre format pour les images
+
+
+penser egalement au classement
+
+defi de puzzul
+
+page de profile coriger l'email qui sort du cadre
+
+peut etre envoyer un mail a la personne registerpage voir
+
+formulaire de recherche
+
+revoir la page d'erreur 404
+
+
+
+*gerer l'apparution des questions et des choix des question de maniere aléatoire  ------> fait
+
+*gerer la publication des defis en fonction de la date de publication  -----> fait
+
+creer un champs image pour chaque defi ----->fait
+
+*mettre en place la page de defi precedent ---->fait
+
+ajouter une photo par defaut pour les images de defi ---->fait
